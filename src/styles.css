@@ -1,0 +1,94 @@
+body {
+  background-color: black;
+}
+
+/* canvas {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+
+.container {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#gameOver {
+  display: none; /* dynamically changing */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke: 3px black;
+  -webkit-user-select: none;      
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+#resources {
+  position: absolute;
+  margin: 0;
+  top: 5px;
+  left: 10px;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  -webkit-user-select: none;      
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+
+
+#passLives {
+  margin-right: 15px;
+}
+
+svg {
+  width: 44px;
+}
+
+#heartIcon {
+  color: red;
+  margin-right: 2px;
+}
+
+#cashIcon {
+  color: greenyellow;
+  margin-right: 2px;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+audio {
+  width: 100%;
+}
